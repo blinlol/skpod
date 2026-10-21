@@ -3,9 +3,22 @@
 #include <chrono>
 #include <cmath>
 #include <iostream>
-#include <numbers>
 #include <stdexcept>
 #include <utility>
+
+#if __cplusplus >= 202002L
+#include <numbers>
+#endif
+
+namespace {
+
+#if __cplusplus >= 202002L
+constexpr double kPi = std::numbers::pi;
+#else
+constexpr double kPi = 3.14159265358979323846;
+#endif
+
+}  // namespace
 
 Solution::Solution(double Lx, double Ly, double Lz, double T, int N, int K) {
     if (Lx <= 0 || Ly <= 0 || Lz <= 0 || T <= 0) {
@@ -32,16 +45,14 @@ Solution::Solution(double Lx, double Ly, double Lz, double T, int N, int K) {
 }
 
 double Solution::frequency(double Lx, double Ly, double Lz) {
-    double pi = std::numbers::pi;
-    return pi * std::sqrt(1.0 / (Lx * Lx) + 1.0 / (Ly * Ly) + 4.0 / (Lz * Lz));
+    return kPi * std::sqrt(1.0 / (Lx * Lx) + 1.0 / (Ly * Ly) + 4.0 / (Lz * Lz));
 }
 
 double Solution::analytical(double x, double y, double z, double t,
                             double Lx, double Ly, double Lz) {
-    double pi = std::numbers::pi;
     double at = frequency(Lx, Ly, Lz);
-    return std::sin(pi * x / Lx) * std::sin(pi * y / Ly) * std::sin(2.0 * pi * z / Lz)
-           * std::cos(at * t + 2.0 * pi);
+    return std::sin(kPi * x / Lx) * std::sin(kPi * y / Ly) * std::sin(2.0 * kPi * z / Lz)
+           * std::cos(at * t + 2.0 * kPi);
 }
 
 double Solution::phi(double x, double y, double z, double Lx, double Ly, double Lz) {
@@ -90,18 +101,21 @@ double Solution::pointLaplacian(const std::vector<double>& u, int i, int j, int 
 
 void Solution::applyBoundaries(std::vector<double>& u) const {
     int nodes = N_ + 1;
+#pragma omp parallel for schedule(static)
     for (int j = 0; j < nodes; ++j) {
         for (int k = 0; k < nodes; ++k) {
             u[index(0, j, k)] = 0.0;
             u[index(N_, j, k)] = 0.0;
         }
     }
+#pragma omp parallel for schedule(static)
     for (int i = 0; i < nodes; ++i) {
         for (int k = 0; k < nodes; ++k) {
             u[index(i, 0, k)] = 0.0;
             u[index(i, N_, k)] = 0.0;
         }
     }
+#pragma omp parallel for schedule(static)
     for (int i = 0; i < nodes; ++i) {
         for (int j = 0; j < nodes; ++j) {
             u[index(i, j, N_)] = u[index(i, j, 0)];
@@ -111,6 +125,7 @@ void Solution::applyBoundaries(std::vector<double>& u) const {
 
 void Solution::fillLayer0(std::vector<double>& u) const {
     int nodes = N_ + 1;
+#pragma omp parallel for schedule(static)
     for (int i = 0; i < nodes; ++i) {
         double x = i * hx_;
         for (int j = 0; j < nodes; ++j) {
@@ -125,6 +140,7 @@ void Solution::fillLayer0(std::vector<double>& u) const {
 }
 
 void Solution::fillLayer1(const std::vector<double>& u0, std::vector<double>& u1) const {
+#pragma omp parallel for schedule(static)
     for (int i = 1; i < N_; ++i) {
         for (int j = 1; j < N_; ++j) {
             for (int k = 0; k < N_; ++k) {
@@ -140,6 +156,7 @@ void Solution::fillLayer1(const std::vector<double>& u0, std::vector<double>& u1
 void Solution::step(const std::vector<double>& prev,
                     const std::vector<double>& curr,
                     std::vector<double>& next) const {
+#pragma omp parallel for schedule(static)
     for (int i = 1; i < N_; ++i) {
         for (int j = 1; j < N_; ++j) {
             for (int k = 0; k < N_; ++k) {
@@ -187,6 +204,7 @@ double Solution::maxError() const {
 
     double delta = 0.0;
     int nodes = N_ + 1;
+#pragma omp parallel for schedule(static) reduction(max:delta)
     for (int i = 0; i < nodes; ++i) {
         double x = i * hx_;
         for (int j = 0; j < nodes; ++j) {
