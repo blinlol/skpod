@@ -1,0 +1,18 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "en_GB.UTF-8",
+	LC_ADDRESS = "en_GB.UTF-8",
+	LC_MONETARY = "en_GB.UTF-8",
+	LC_NUMERIC = "en_GB.UTF-8",
+	LC_TELEPHONE = "en_GB.UTF-8",
+	LC_IDENTIFICATION = "en_GB.UTF-8",
+	LC_MEASUREMENT = "en_GB.UTF-8",
+	LC_TIME = "en_GB.UTF-8",
+	LC_NAME = "en_GB.UTF-8",
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+[polus-c2-ib.bmc.hpc.cs.msu.ru:35473] 31 more processes have sent help message help-orte-odls-default.txt / execve error
+[polus-c2-ib.bmc.hpc.cs.msu.ru:35473] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
