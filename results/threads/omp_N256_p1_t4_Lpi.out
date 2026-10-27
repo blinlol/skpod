@@ -1,0 +1,49 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1598553: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 1;#BSUB -W 00:20;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads/omp_N256_p1_t4_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads/omp_N256_p1_t4_Lpi.err;OMP_NUM_THREADS=4 mpiexec ./wave 256 3.141592653589793 3.141592653589793 3.141592653589793 0.1275327677977184 20> in cluster <MSUCluster> Done
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 1;#BSUB -W 00:20;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads/omp_N256_p1_t4_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads/omp_N256_p1_t4_Lpi.err;OMP_NUM_THREADS=4 mpiexec ./wave 256 3.141592653589793 3.141592653589793 3.141592653589793 0.1275327677977184 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 22:25:37 2026
+Job was executed on host(s) <polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 22:25:38 2026
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02> was used as the home directory.
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod> was used as the working directory.
+Started at Fri Oct 23 22:25:38 2026
+Terminated at Fri Oct 23 22:25:48 2026
+Results reported at Fri Oct 23 22:25:48 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 1
+#BSUB -W 00:20
+#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads/omp_N256_p1_t4_Lpi.out
+#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads/omp_N256_p1_t4_Lpi.err
+OMP_NUM_THREADS=4 mpiexec ./wave 256 3.141592653589793 3.141592653589793 3.141592653589793 0.1275327677977184 20
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   15.61 sec.
+    Max Memory :                                 409 MB
+    Average Memory :                             307.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                13
+    Run time :                                   9 sec.
+    Turnaround time :                            11 sec.
+
+The output (if any) follows:
+
+tau=6.37663839e-03 time_sec=8.42051759e+00 delta=8.31381237e-07
+
+
+PS:
+
+Read file </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads/omp_N256_p1_t4_Lpi.err> for stderr output of this job.
+

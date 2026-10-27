@@ -1,0 +1,82 @@
+Sender: LSF System <lsfadmin@polus-c2-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1598484: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 32;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p32_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p32_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20> in cluster <MSUCluster> Done
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 32;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p32_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p32_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:39:11 2026
+Job was executed on host(s) <4*polus-c2-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:40:25 2026
+                            <20*polus-c4-ib.bmc.hpc.cs.msu.ru>
+                            <8*polus-c3-ib.bmc.hpc.cs.msu.ru>
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02> was used as the home directory.
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod> was used as the working directory.
+Started at Fri Oct 23 21:40:25 2026
+Terminated at Fri Oct 23 21:47:16 2026
+Results reported at Fri Oct 23 21:47:16 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 32
+#BSUB -W 00:30
+#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p32_t1_Lpi.out
+#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p32_t1_Lpi.err
+OMP_NUM_THREADS=1 mpiexec ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1693.28 sec.
+    Max Memory :                                 99009 MB
+    Average Memory :                             80271.55 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              38
+    Max Threads :                                49
+    Run time :                                   411 sec.
+    Turnaround time :                            485 sec.
+
+The output (if any) follows:
+
+tau=3.18831919e-03 time_sec=2.43164631e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=2.43211049e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=2.45768028e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=2.45829687e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.38397532e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.38937286e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.39242008e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.39728669e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68184092e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68302924e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68304444e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68269847e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68244306e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68208396e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68357328e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68330306e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68448743e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.68614472e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.69497216e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.69530266e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.69609251e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.69795251e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.69830549e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.69956996e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.70094899e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.69998277e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.70067485e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.70113775e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.87821825e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.88005880e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.88001874e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.88487543e+02 delta=5.26012739e-08
+
+
+PS:
+
+Read file </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p32_t1_Lpi.err> for stderr output of this job.
+

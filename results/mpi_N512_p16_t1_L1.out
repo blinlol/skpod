@@ -1,0 +1,65 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1598454: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 16;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_L1.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_L1.err;OMP_NUM_THREADS=1 mpiexec ./wave 512 1 1 1 0.02029747040119778 20> in cluster <MSUCluster> Done
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 16;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_L1.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_L1.err;OMP_NUM_THREADS=1 mpiexec ./wave 512 1 1 1 0.02029747040119778 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:21:36 2026
+Job was executed on host(s) <7*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:21:36 2026
+                            <9*polus-c3-ib.bmc.hpc.cs.msu.ru>
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02> was used as the home directory.
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod> was used as the working directory.
+Started at Fri Oct 23 21:21:36 2026
+Terminated at Fri Oct 23 21:28:59 2026
+Results reported at Fri Oct 23 21:28:59 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 16
+#BSUB -W 00:30
+#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_L1.out
+#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_L1.err
+OMP_NUM_THREADS=1 mpiexec ./wave 512 1 1 1 0.02029747040119778 20
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   972.00 sec.
+    Max Memory :                                 49513 MB
+    Average Memory :                             36131.12 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              21
+    Max Threads :                                29
+    Run time :                                   449 sec.
+    Turnaround time :                            443 sec.
+
+The output (if any) follows:
+
+tau=1.01487352e-03 time_sec=2.87101937e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=2.87131969e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=2.87317617e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=2.87428507e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.08354436e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.08393288e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.08418774e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.85830276e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.86115547e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.86278626e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.86300431e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.99085216e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.99370328e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.99340519e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.99313242e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=3.99589964e+02 delta=5.26012738e-08
+
+
+PS:
+
+Read file </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_L1.err> for stderr output of this job.
+

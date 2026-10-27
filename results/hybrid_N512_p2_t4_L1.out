@@ -1,0 +1,50 @@
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1598458: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 2;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/hybrid_N512_p2_t4_L1.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/hybrid_N512_p2_t4_L1.err;OMP_NUM_THREADS=4 mpiexec ./wave 512 1 1 1 0.02029747040119778 20> in cluster <MSUCluster> Done
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 2;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/hybrid_N512_p2_t4_L1.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/hybrid_N512_p2_t4_L1.err;OMP_NUM_THREADS=4 mpiexec ./wave 512 1 1 1 0.02029747040119778 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:27:06 2026
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:27:07 2026
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02> was used as the home directory.
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod> was used as the working directory.
+Started at Fri Oct 23 21:27:07 2026
+Terminated at Fri Oct 23 21:30:06 2026
+Results reported at Fri Oct 23 21:30:06 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 2
+#BSUB -W 00:30
+#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/hybrid_N512_p2_t4_L1.out
+#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/hybrid_N512_p2_t4_L1.err
+OMP_NUM_THREADS=4 mpiexec ./wave 512 1 1 1 0.02029747040119778 20
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   571.17 sec.
+    Max Memory :                                 6204 MB
+    Average Memory :                             5489.92 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                17
+    Run time :                                   184 sec.
+    Turnaround time :                            180 sec.
+
+The output (if any) follows:
+
+tau=1.01487352e-03 time_sec=1.68743775e+02 delta=5.26012738e-08
+tau=1.01487352e-03 time_sec=1.68796033e+02 delta=5.26012738e-08
+
+
+PS:
+
+Read file </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/hybrid_N512_p2_t4_L1.err> for stderr output of this job.
+

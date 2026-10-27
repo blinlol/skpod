@@ -1,0 +1,64 @@
+Sender: LSF System <lsfadmin@polus-c2-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1598483: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 16;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20> in cluster <MSUCluster> Done
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 16;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:38:56 2026
+Job was executed on host(s) <16*polus-c2-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:38:56 2026
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02> was used as the home directory.
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod> was used as the working directory.
+Started at Fri Oct 23 21:38:56 2026
+Terminated at Fri Oct 23 21:50:06 2026
+Results reported at Fri Oct 23 21:50:06 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 16
+#BSUB -W 00:30
+#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_Lpi.out
+#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_Lpi.err
+OMP_NUM_THREADS=1 mpiexec ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1053.06 sec.
+    Max Memory :                                 49501 MB
+    Average Memory :                             46424.53 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   2 MB
+    Max Processes :                              20
+    Max Threads :                                25
+    Run time :                                   675 sec.
+    Turnaround time :                            670 sec.
+
+The output (if any) follows:
+
+tau=3.18831919e-03 time_sec=6.31643976e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.31775801e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.31663946e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.31737700e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.31673664e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.31728535e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.31849732e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.31697988e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.37533731e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.37596460e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.37720769e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.38103954e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.38005009e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.38107797e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.38290231e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=6.38192027e+02 delta=5.26012739e-08
+
+
+PS:
+
+Read file </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p16_t1_Lpi.err> for stderr output of this job.
+

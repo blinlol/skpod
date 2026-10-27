@@ -1,0 +1,53 @@
+Sender: LSF System <lsfadmin@polus-c2-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1599782: <source /polusfs/setenv/setup.SMPI;#BSUB -n 32;#BSUB -R span[ptile=16];#BSUB -W 00:10;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N128_p4_t64_L1.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N128_p4_t64_L1.err;OMP_NUM_THREADS=64 mpiexec -npernode 2 ./wave 128 1 1 1 0.08118988160479113 20> in cluster <MSUCluster> Done
+
+Job <source /polusfs/setenv/setup.SMPI;#BSUB -n 32;#BSUB -R span[ptile=16];#BSUB -W 00:10;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N128_p4_t64_L1.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N128_p4_t64_L1.err;OMP_NUM_THREADS=64 mpiexec -npernode 2 ./wave 128 1 1 1 0.08118988160479113 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Sat Oct 24 08:29:26 2026
+Job was executed on host(s) <16*polus-c2-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Sat Oct 24 08:29:27 2026
+                            <16*polus-c3-ib.bmc.hpc.cs.msu.ru>
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02> was used as the home directory.
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod> was used as the working directory.
+Started at Sat Oct 24 08:29:27 2026
+Terminated at Sat Oct 24 08:29:29 2026
+Results reported at Sat Oct 24 08:29:29 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 32
+#BSUB -R span[ptile=16]
+#BSUB -W 00:10
+#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N128_p4_t64_L1.out
+#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N128_p4_t64_L1.err
+OMP_NUM_THREADS=64 mpiexec -npernode 2 ./wave 128 1 1 1 0.08118988160479113 20
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   31.84 sec.
+    Max Memory :                                 19 MB
+    Average Memory :                             13.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   8 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) follows:
+
+tau=4.05949408e-03 time_sec=1.02534653e-01 delta=1.26587153e-05
+tau=4.05949408e-03 time_sec=1.64769118e-01 delta=1.26587153e-05
+tau=4.05949408e-03 time_sec=1.57137401e-01 delta=1.26587153e-05
+tau=4.05949408e-03 time_sec=2.04748402e-01 delta=1.26587153e-05
+
+
+PS:
+
+Read file </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N128_p4_t64_L1.err> for stderr output of this job.
+

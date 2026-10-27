@@ -1,13 +1,13 @@
 Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
-Subject: Job 1597589: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 4;#BSUB -W 00:20;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N256_p4_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N256_p4_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 256 3.141592653589793 3.141592653589793 3.141592653589793 0.1275327677977184 20> in cluster <MSUCluster> Exited
+Subject: Job 1598472: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 4;#BSUB -W 00:20;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N256_p4_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N256_p4_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 256 3.141592653589793 3.141592653589793 3.141592653589793 0.1275327677977184 20> in cluster <MSUCluster> Done
 
-Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 4;#BSUB -W 00:20;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N256_p4_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N256_p4_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 256 3.141592653589793 3.141592653589793 3.141592653589793 0.1275327677977184 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Wed Oct 21 18:06:05 2026
-Job was executed on host(s) <4*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Wed Oct 21 18:06:06 2026
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 4;#BSUB -W 00:20;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N256_p4_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N256_p4_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 256 3.141592653589793 3.141592653589793 3.141592653589793 0.1275327677977184 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:32:23 2026
+Job was executed on host(s) <4*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:32:24 2026
 </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02> was used as the home directory.
 </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod> was used as the working directory.
-Started at Wed Oct 21 18:06:06 2026
-Terminated at Wed Oct 21 18:06:07 2026
-Results reported at Wed Oct 21 18:06:07 2026
+Started at Fri Oct 23 21:32:24 2026
+Terminated at Fri Oct 23 21:32:44 2026
+Results reported at Fri Oct 23 21:32:44 2026
 
 Your job looked like:
 
@@ -23,36 +23,27 @@ OMP_NUM_THREADS=1 mpiexec ./wave 256 3.141592653589793 3.141592653589793 3.14159
 
 ------------------------------------------------------------
 
-Exited with exit code 213.
+Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   0.24 sec.
-    Max Memory :                                 1 MB
-    Average Memory :                             1.00 MB
+    CPU time :                                   19.99 sec.
+    Max Memory :                                 1582 MB
+    Average Memory :                             1265.80 MB
     Total Requested Memory :                     -
     Delta Memory :                               -
     Max Swap :                                   -
-    Max Processes :                              1
-    Max Threads :                                1
-    Run time :                                   3 sec.
-    Turnaround time :                            2 sec.
+    Max Processes :                              8
+    Max Threads :                                13
+    Run time :                                   20 sec.
+    Turnaround time :                            21 sec.
 
 The output (if any) follows:
 
---------------------------------------------------------------------------
-Open MPI tried to fork a new process via the "execve" system call but
-failed.  Open MPI checks many things before attempting to launch a
-child process, but nothing is perfect. This error may be indicative
-of another problem on the target host, or even something as silly as
-having specified a directory for your application. Your job will now
-abort.
-
-  Local host:        polus-c4-ib
-  Application name:  ./wave
-  Error:             Exec format error
---------------------------------------------------------------------------
-4 total processes failed to start
+tau=6.37663839e-03 time_sec=1.82516928e+01 delta=8.31381237e-07
+tau=6.37663839e-03 time_sec=1.82311276e+01 delta=8.31381237e-07
+tau=6.37663839e-03 time_sec=1.82895293e+01 delta=8.31381237e-07
+tau=6.37663839e-03 time_sec=1.83075062e+01 delta=8.31381237e-07
 
 
 PS:

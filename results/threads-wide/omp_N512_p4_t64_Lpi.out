@@ -1,0 +1,53 @@
+Sender: LSF System <lsfadmin@polus-c2-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1599797: <source /polusfs/setenv/setup.SMPI;#BSUB -n 32;#BSUB -R span[ptile=16];#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N512_p4_t64_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N512_p4_t64_Lpi.err;OMP_NUM_THREADS=64 mpiexec -npernode 2 ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20> in cluster <MSUCluster> Done
+
+Job <source /polusfs/setenv/setup.SMPI;#BSUB -n 32;#BSUB -R span[ptile=16];#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N512_p4_t64_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N512_p4_t64_Lpi.err;OMP_NUM_THREADS=64 mpiexec -npernode 2 ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Sat Oct 24 08:33:13 2026
+Job was executed on host(s) <16*polus-c2-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Sat Oct 24 08:33:13 2026
+                            <16*polus-c4-ib.bmc.hpc.cs.msu.ru>
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02> was used as the home directory.
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod> was used as the working directory.
+Started at Sat Oct 24 08:33:13 2026
+Terminated at Sat Oct 24 08:33:21 2026
+Results reported at Sat Oct 24 08:33:21 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 32
+#BSUB -R span[ptile=16]
+#BSUB -W 00:30
+#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N512_p4_t64_Lpi.out
+#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N512_p4_t64_Lpi.err
+OMP_NUM_THREADS=64 mpiexec -npernode 2 ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1226.80 sec.
+    Max Memory :                                 6218 MB
+    Average Memory :                             4145.67 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                117
+    Run time :                                   7 sec.
+    Turnaround time :                            8 sec.
+
+The output (if any) follows:
+
+tau=3.18831919e-03 time_sec=3.47494330e+00 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=3.56145351e+00 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=5.01036879e+00 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=5.05730608e+00 delta=5.26012739e-08
+
+
+PS:
+
+Read file </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/threads-wide/omp_N512_p4_t64_Lpi.err> for stderr output of this job.
+

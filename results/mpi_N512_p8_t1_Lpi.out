@@ -1,0 +1,56 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1598482: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 8;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p8_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p8_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20> in cluster <MSUCluster> Done
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #;source /polusfs/setenv/setup.SMPI;#BSUB -n 8;#BSUB -W 00:30;#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p8_t1_Lpi.out;#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p8_t1_Lpi.err;OMP_NUM_THREADS=1 mpiexec ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:36:55 2026
+Job was executed on host(s) <8*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel26-628-02> in cluster <MSUCluster> at Fri Oct 23 21:36:55 2026
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02> was used as the home directory.
+</home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod> was used as the working directory.
+Started at Fri Oct 23 21:36:55 2026
+Terminated at Fri Oct 23 21:40:07 2026
+Results reported at Fri Oct 23 21:40:07 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel26-628-02 #
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 8
+#BSUB -W 00:30
+#BSUB -o /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p8_t1_Lpi.out
+#BSUB -e /home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p8_t1_Lpi.err
+OMP_NUM_THREADS=1 mpiexec ./wave 512 3.141592653589793 3.141592653589793 3.141592653589793 0.06376638389885922 20
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   317.03 sec.
+    Max Memory :                                 24759 MB
+    Average Memory :                             21520.36 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              12
+    Max Threads :                                17
+    Run time :                                   193 sec.
+    Turnaround time :                            192 sec.
+
+The output (if any) follows:
+
+tau=3.18831919e-03 time_sec=1.73369211e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=1.73500509e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=1.73554091e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=1.73611860e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=1.74883863e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=1.75012333e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=1.74954315e+02 delta=5.26012739e-08
+tau=3.18831919e-03 time_sec=1.75065961e+02 delta=5.26012739e-08
+
+
+PS:
+
+Read file </home_edu/edu-cmc-skmodel26-628/edu-cmc-skmodel26-628-02/skpod/results/mpi_N512_p8_t1_Lpi.err> for stderr output of this job.
+
